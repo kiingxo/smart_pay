@@ -1,0 +1,48 @@
+name: smart_pay
+description: "Smart pay app"
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.20.5
+  flutter_secure_storage: ^9.0.0
+  flutter_svg: ^2.0.10+1
+  hooks_riverpod: ^2.4.10
+  http: ^1.2.0
+  pin_code_fields: ^8.0.1
+
+dev_dependencies:
+  flutter_lints: ^3.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/svgs/
+    - assets/images/
+
+  fonts:
+    - family: SFPro
+      fonts:
+        - asset: assets/fonts/SFPro/SF-Pro-Text-Heavy.otf
+          weight: 700
+        - asset: assets/fonts/SFPro/SF-Pro-Text-Bold.otf
+          weight: 600
+        - asset: assets/fonts/SFPro/SF-Pro-Text-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SFPro/SF-Pro-Text-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SFPro/SF-Pro-Text-Light.otf
+          weight: 300
